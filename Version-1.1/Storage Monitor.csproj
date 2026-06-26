@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>storagemonitor</AssemblyName>
+    <RootNamespace>Calloatti.StorageMonitor</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="CommonModSettings.props" />
+  
+  <ItemGroup>
+    <Publicize Remove="Timberborn.GameDistricts" />
+    <Publicize Remove="Timberborn.BlueprintSystem" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TimberbornPath>C:\Program Files (x86)\Steam\steamapps\common\timberborn_experimental\Timberborn_Data\Managed</TimberbornPath>
+  </PropertyGroup>
+
+</Project>

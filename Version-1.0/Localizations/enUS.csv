@@ -1,0 +1,10 @@
+ID,Text,Comment
+Building.StorageMonitor.DisplayName,"Storage Monitor",
+Building.StorageMonitor.Description,"Changes and holds its state based on a min and max signals",
+Building.StorageMonitor.FlavorDescription,"Like a Resource Counter, but better and for storage buildings!",
+Building.StorageMonitor.Mode.FillRate,"Percent (%)",
+Building.StorageMonitor.Mode.StockLevel,"Quantity",
+Building.StorageMonitor.TurnOnIf,"Turn ON if ≤",
+Building.StorageMonitor.TurnOffIf,"Turn OFF if ≥",
+Building.StorageMonitor.MeasurementQuantity,"Measurement: {0}",
+Building.StorageMonitor.MeasurementPercent,"Measurement: {0}%",
