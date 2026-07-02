@@ -1,9 +1,9 @@
-{
-    "Name": "Storage Monitor",
-    "Version": "1.0.0",
-    "Id": "Calloatti.StorageMonitor",
-    "MinimumGameVersion": "1.1.0.0",
-    "Description": "Monitors storage building resource levels to trigger automation signals based on configurable min-max thresholds.",
-    "RequiredMods": [],
-    "OptionalMods": []
+﻿{
+  "Name": "Storage Monitor",
+  "Version": "1.0.0",
+  "Id": "Calloatti.StorageMonitor",
+  "MinimumGameVersion": "1.1.0.0",
+  "Description": "Monitors storage building resource levels to trigger automation signals based on configurable min-max thresholds.",
+  "RequiredMods": [],
+  "OptionalMods": []
 }
