@@ -1,0 +1,10 @@
+ID,Text,Comment
+Building.StorageMonitor.DisplayName,"存储监视器",
+Building.StorageMonitor.Description,"根据最小和最大信号改变并保持其状态。",
+Building.StorageMonitor.FlavorDescription,"就像资源计数器，但更好，而且专为存储建筑设计！",
+Building.StorageMonitor.Mode.FillRate,"百分比 (%)",
+Building.StorageMonitor.Mode.StockLevel,"数量",
+Building.StorageMonitor.TurnOnIf,"≤ 时开启",
+Building.StorageMonitor.TurnOffIf,"≥ 时关闭",
+Building.StorageMonitor.MeasurementQuantity,"测量值: {0}",
+Building.StorageMonitor.MeasurementPercent,"测量值: {0}%",

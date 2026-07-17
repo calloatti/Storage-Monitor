@@ -1,0 +1,10 @@
+ID,Text,Comment
+Building.StorageMonitor.DisplayName,"저장 모니터",
+Building.StorageMonitor.Description,"최소 및 최대 신호에 따라 상태를 변경하고 유지합니다.",
+Building.StorageMonitor.FlavorDescription,"자원 카운터와 비슷하지만 더 좋고 저장 건물용!",
+Building.StorageMonitor.Mode.FillRate,"백분율 (%)",
+Building.StorageMonitor.Mode.StockLevel,"수량",
+Building.StorageMonitor.TurnOnIf,"≤ 이면 켜기",
+Building.StorageMonitor.TurnOffIf,"≥ 이면 끄기",
+Building.StorageMonitor.MeasurementQuantity,"측정: {0}",
+Building.StorageMonitor.MeasurementPercent,"측정: {0}%",

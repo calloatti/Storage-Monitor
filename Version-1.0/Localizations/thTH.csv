@@ -1,0 +1,10 @@
+ID,Text,Comment
+Building.StorageMonitor.DisplayName,"มอนิเตอร์พื้นที่จัดเก็บ",
+Building.StorageMonitor.Description,"เปลี่ยนและคงสถานะตามสัญญาณต่ำสุดและสูงสุด",
+Building.StorageMonitor.FlavorDescription,"เหมือนตัวนับทรัพยากร แต่ดีกว่าและสำหรับอาคารจัดเก็บ!",
+Building.StorageMonitor.Mode.FillRate,"เปอร์เซ็นต์ (%)",
+Building.StorageMonitor.Mode.StockLevel,"จำนวน",
+Building.StorageMonitor.TurnOnIf,"เปิดถ้า ≤",
+Building.StorageMonitor.TurnOffIf,"ปิดถ้า ≥",
+Building.StorageMonitor.MeasurementQuantity,"การวัด: {0}",
+Building.StorageMonitor.MeasurementPercent,"การวัด: {0}%",

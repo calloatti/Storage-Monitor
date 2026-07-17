@@ -1,0 +1,10 @@
+ID,Text,Comment
+Building.StorageMonitor.DisplayName,"Depolama Monitörü",
+Building.StorageMonitor.Description,"Min ve maks sinyallerine göre durumunu değiştirir ve korur.",
+Building.StorageMonitor.FlavorDescription,"Bir Kaynak Sayacı gibi, ancak daha iyi ve depo binaları için!",
+Building.StorageMonitor.Mode.FillRate,"Yüzde (%)",
+Building.StorageMonitor.Mode.StockLevel,"Miktar",
+Building.StorageMonitor.TurnOnIf,"≤ ise AÇ",
+Building.StorageMonitor.TurnOffIf,"≥ ise KAPAT",
+Building.StorageMonitor.MeasurementQuantity,"Ölçüm: {0}",
+Building.StorageMonitor.MeasurementPercent,"Ölçüm: {0}%",

@@ -1,0 +1,10 @@
+ID,Text,Comment
+Building.StorageMonitor.DisplayName,"ストレージモニター",
+Building.StorageMonitor.Description,"最小および最大の信号に基づいて状態を変更し保持します。",
+Building.StorageMonitor.FlavorDescription,"リソースカウンターのようなものだが、より優れていて保管施設向け！",
+Building.StorageMonitor.Mode.FillRate,"パーセント (%)",
+Building.StorageMonitor.Mode.StockLevel,"数量",
+Building.StorageMonitor.TurnOnIf,"以下の場合ON: ≤",
+Building.StorageMonitor.TurnOffIf,"以上の場合OFF: ≥",
+Building.StorageMonitor.MeasurementQuantity,"測定: {0}",
+Building.StorageMonitor.MeasurementPercent,"測定: {0}%",

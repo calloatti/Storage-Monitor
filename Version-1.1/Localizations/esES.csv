@@ -1,0 +1,10 @@
+ID,Text,Comment
+Building.StorageMonitor.DisplayName,"Monitor de almacenamiento",
+Building.StorageMonitor.Description,"Cambia y mantiene su estado basado en señales mínimas y máximas.",
+Building.StorageMonitor.FlavorDescription,"Como un Contador de Recursos, pero mejor y para edificios de almacenamiento!",
+Building.StorageMonitor.Mode.FillRate,"Porcentaje (%)",
+Building.StorageMonitor.Mode.StockLevel,"Cantidad",
+Building.StorageMonitor.TurnOnIf,"ACTIVAR si ≤",
+Building.StorageMonitor.TurnOffIf,"DESACTIVAR si ≥",
+Building.StorageMonitor.MeasurementQuantity,"Medición: {0}",
+Building.StorageMonitor.MeasurementPercent,"Medición: {0}%",

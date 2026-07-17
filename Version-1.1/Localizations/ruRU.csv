@@ -1,0 +1,10 @@
+ID,Text,Comment
+Building.StorageMonitor.DisplayName,"Монитор хранилища",
+Building.StorageMonitor.Description,"Изменяет и удерживает своё состояние на основе минимального и максимального сигналов.",
+Building.StorageMonitor.FlavorDescription,"Как счётчик ресурсов, но лучше и для складских зданий!",
+Building.StorageMonitor.Mode.FillRate,"Процент (%)",
+Building.StorageMonitor.Mode.StockLevel,"Количество",
+Building.StorageMonitor.TurnOnIf,"ВКЛЮЧИТЬ если ≤",
+Building.StorageMonitor.TurnOffIf,"ВЫКЛЮЧИТЬ если ≥",
+Building.StorageMonitor.MeasurementQuantity,"Измерение: {0}",
+Building.StorageMonitor.MeasurementPercent,"Измерение: {0}%",
