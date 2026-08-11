@@ -3,18 +3,15 @@
   <PropertyGroup>
     <AssemblyName>storagemonitor</AssemblyName>
     <RootNamespace>Calloatti.StorageMonitor</RootNamespace>
+    <TimberbornPath>C:\Program Files (x86)\Steam\steamapps\common\timberborn_experimental\Timberborn_Data\Managed</TimberbornPath>
   </PropertyGroup>
 
   <Import Project="CommonModSettings.props" />
-  
-  <ItemGroup>
-    <Publicize Remove="Timberborn.GameDistricts" />
-    <Publicize Remove="Timberborn.BlueprintSystem" />
-    <Publicize Remove="Timberborn.CoreUI" />
-  </ItemGroup>
 
-  <PropertyGroup>
-    <TimberbornPath>C:\Program Files (x86)\Steam\steamapps\common\timberborn_experimental\Timberborn_Data\Managed</TimberbornPath>
-  </PropertyGroup>
+  <ItemGroup>
+    <DoNotPublicize Include="Timberborn.CoreUI:Timberborn.CoreUI.RadioToggle.RadioButtonSelected" />
+    <DoNotPublicize Include="Timberborn.BlueprintSystem:Timberborn.BlueprintSystem.ComponentSpec.EqualityContract" />
+    <DoNotPublicize Include="Timberborn.BlueprintSystem:Timberborn.BlueprintSystem.ComponentSpec.PrintMembers" />
+  </ItemGroup>
 
 </Project>

@@ -7,7 +7,7 @@ Include ..\AGENTS.md
 - **Namespace:** `Calloatti.StorageMonitor`
 - **ModId:** `Calloatti.StorageMonitor`
 - **Framework:** Bindito DI
-- **Publicizer:** removes `Timberborn.GameDistricts`, `Timberborn.BlueprintSystem`, `Timberborn.CoreUI`
+- **Publicizer:** `Timberborn.GameDistricts`, `Timberborn.BlueprintSystem`, `Timberborn.CoreUI` are publicized via `CommonModSettings.props`, with `DoNotPublicize` for `RadioToggle.RadioButtonSelected` and `ComponentSpec.EqualityContract`/`PrintMembers` (see csproj)
 - **Min Game Version:** 1.0.12.5 — uses `timberborn-decompiled-1.0.*`
 
 ## What This Mod Does

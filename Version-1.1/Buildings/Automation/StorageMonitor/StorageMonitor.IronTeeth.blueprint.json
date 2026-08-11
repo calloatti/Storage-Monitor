@@ -65,7 +65,7 @@
     "DisplayNameLocKey": "Building.StorageMonitor.DisplayName",
     "DescriptionLocKey": "Building.StorageMonitor.Description",
     "FlavorDescriptionLocKey": "Building.StorageMonitor.FlavorDescription",
-    "Icon": "Buildings/Automation/ResourceCounter/ResourceCounterIcon"
+    "Icon": "Buildings/Automation/StorageMonitor/StorageMonitorIcon"
   },
   "ConstructionSiteProgressVisualizerSpec": {"ProgressThresholds": [0]},
   "StorageMonitorSpec": {},
