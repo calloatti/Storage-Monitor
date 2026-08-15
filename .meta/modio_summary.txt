@@ -1,0 +1,1 @@
+Monitors storage building resource levels to trigger automation signals based on configurable min-max thresholds.
