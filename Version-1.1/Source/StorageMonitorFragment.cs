@@ -1,6 +1,5 @@
 ﻿using System;
 using Timberborn.AutomationBuildings;
-using Timberborn.AutomationBuildingsUI;
 using Timberborn.BaseComponentSystem;
 using Timberborn.CoreUI;
 using Timberborn.DropdownSystem;
@@ -33,10 +32,12 @@ namespace Calloatti.StorageMonitor
     private Toggle _includeInputsToggle;
     private Label _measurement;
 
+    // ON Controls
     private IntegerField _thresholdOnField;
     private Label _fillRateLabelOn;
     private PreciseSlider _fillRateSliderOn;
 
+    // OFF Controls
     private IntegerField _thresholdOffField;
     private Label _fillRateLabelOff;
     private PreciseSlider _fillRateSliderOff;
@@ -55,8 +56,7 @@ namespace Calloatti.StorageMonitor
 
     public VisualElement InitializeFragment()
     {
-      _root = _visualElementLoader.LoadVisualElement("Game/EntityPanel/ResourceCounterFragment");
-      var bottomSection = _root.Q<VisualElement>("BottomSection");
+      _root = _visualElementLoader.LoadVisualElement("StorageMonitor/StorageMonitorFragment");
 
       _modeRadioToggle = _radioToggleFactory.CreateLocalizable<ResourceCounterMode>(ModeLocKeyPrefix, _root.Q<VisualElement>("ModeRadioToggleContainer"));
       _modeRadioToggle.RadioButtonSelected += (sender, index) => {
@@ -71,10 +71,6 @@ namespace Calloatti.StorageMonitor
       _measurement = _root.Q<Label>("Measurement");
 
       _includeInputsToggle = _root.Q<Toggle>("Toggle");
-
-      _includeInputsToggle.style.marginTop = 14;
-      _includeInputsToggle.style.marginBottom = 13;
-
       _includeInputsToggle.RegisterValueChangedCallback(evt => {
         if (_storageMonitor != null)
         {
@@ -83,7 +79,6 @@ namespace Calloatti.StorageMonitor
       });
 
       var onWrapper = _root.Q<VisualElement>("ComparisonWrapper");
-      onWrapper.Q<Dropdown>("ComparisonMode").ToggleDisplayStyle(false);
 
       _thresholdOnField = onWrapper.Q<IntegerField>("Threshold");
       _fillRateLabelOn = _root.Q<Label>("FillRateLabel");
@@ -109,22 +104,14 @@ namespace Calloatti.StorageMonitor
         }
       });
 
-      var onTitle = new Label(_loc.T(TurnOnIfLocKey));
-      onTitle.AddToClassList("game-text-normal");
-      onTitle.style.marginTop = 10;
-      bottomSection.Insert(bottomSection.IndexOf(onWrapper), onTitle);
+      var onTitle = _root.Q<Label>("OnTitle");
+      onTitle.text = _loc.T(TurnOnIfLocKey);
 
+      var offWrapper = _root.Q<VisualElement>("OffComparisonWrapper");
 
-      var offTemplate = _visualElementLoader.LoadVisualElement("Game/EntityPanel/ResourceCounterFragment");
-      var offWrapper = offTemplate.Q<VisualElement>("ComparisonWrapper");
-      offWrapper.Q<Dropdown>("ComparisonMode").ToggleDisplayStyle(false);
-
-      _thresholdOffField = offWrapper.Q<IntegerField>("Threshold");
-
-      _thresholdOffField.style.marginBottom = 13;
-
-      _fillRateLabelOff = offTemplate.Q<Label>("FillRateLabel");
-      _fillRateSliderOff = offTemplate.Q<PreciseSlider>("FillRateSlider");
+      _thresholdOffField = offWrapper.Q<IntegerField>("ThresholdOff");
+      _fillRateLabelOff = _root.Q<Label>("FillRateLabelOff");
+      _fillRateSliderOff = _root.Q<PreciseSlider>("FillRateSliderOff");
 
       _thresholdOffField.isDelayed = true;
       _thresholdOffField.RegisterValueChangedCallback(evt => {
@@ -146,13 +133,8 @@ namespace Calloatti.StorageMonitor
         }
       });
 
-      var offTitle = new Label(_loc.T(TurnOffIfLocKey));
-      offTitle.AddToClassList("game-text-normal");
-      offTitle.style.marginTop = 10;
-      bottomSection.Add(offTitle);
-      bottomSection.Add(offWrapper);
-      bottomSection.Add(_fillRateLabelOff);
-      bottomSection.Add(_fillRateSliderOff);
+      var offTitle = _root.Q<Label>("OffTitle");
+      offTitle.text = _loc.T(TurnOffIfLocKey);
 
       _root.ToggleDisplayStyle(false);
       return _root;

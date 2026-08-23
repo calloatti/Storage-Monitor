@@ -20,7 +20,7 @@ namespace Calloatti.StorageMonitor
       public EntityPanelModule Get()
       {
         EntityPanelModule.Builder builder = new EntityPanelModule.Builder();
-        builder.AddMiddleFragment(_fragment, 100);
+        builder.AddMiddleFragment(_fragment, 50);
         return builder.Build();
       }
     }
